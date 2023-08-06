@@ -1,0 +1,14 @@
+﻿@using DropDownList.Controllers;
+@using DropDownList.Models;
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<label>Select Gender</label>
+
+@*@Html.DropDownList("Gender",ViewBag.Gender,"Select Gender");*@
+
+<select name="Gender" asp-items="@ViewBag.Gender">
+    <option value="">Select Gender</option>
+</select>
